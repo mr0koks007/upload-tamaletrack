@@ -17,6 +17,7 @@ platform :ios do
     build_app(
       scheme: "TamaleTrack",
       export_method: "app-store",
+       team_id: "NGP65SQNNL",
       export_options: {
         signingStyle: "automatic"
       }
