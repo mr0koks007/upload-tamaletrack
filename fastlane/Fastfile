@@ -23,9 +23,6 @@ platform :ios do
       scheme: "TamaleTrack",
       export_method: "app-store",
       export_options: {
-        provisioningProfiles: {
-          "com.TamaleTrack" => "match AppStore com.TamaleTrack"
-        },
         signingStyle: "automatic",
         signingCertificate: "Apple Distribution",
         compileBitcode: true,
@@ -37,3 +34,4 @@ platform :ios do
     upload_to_testflight(api_key: api_key)
   end
 end
+
