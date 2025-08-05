@@ -10,16 +10,17 @@ jobs:
     runs-on: macos-latest
 
     steps:
-      - name: Checkout code
+      - name: 🧾 Checkout repository
         uses: actions/checkout@v3
 
-      - name: Install Fastlane
+      - name: 💎 Install Fastlane
         run: gem install fastlane
 
-      - name: Restore API Key
+      - name: 🔑 Restore App Store Connect API Key
         run: |
           mkdir -p fastlane
-          echo "${{ secrets.APP_STORE_CONNECT_KEY }}" > fastlane/AuthKey_4F67HCB9N8.p8
+          echo "${{ secrets.APP_STORE_CONNECT_KEY_BASE64 }}" | base64 -d > fastlane/AuthKey_4F67HCB9N8.p8
 
-      - name: Run Fastlane
+      - name: 🚀 Run Fastlane
         run: fastlane beta
+
