@@ -24,11 +24,10 @@ platform :ios do
       export_method: "app-store",
       export_options: {
         signingStyle: "automatic",
-        signingCertificate: "Apple Distribution",
         compileBitcode: true,
-        manageAppVersionAndBuildNumber: true,
-        allowProvisioningUpdates: true
-      }
+        manageAppVersionAndBuildNumber: true
+      },
+      xcargs: "-allowProvisioningUpdates"
     )
 
     upload_to_testflight(api_key: api_key)
