@@ -4,9 +4,9 @@ platform :ios do
   desc "Собрать и залить билд в TestFlight"
   lane :release do
     api_key = app_store_connect_api_key(
-      key_id: ENV["API_KEY_ID"],
-      issuer_id: ENV["API_ISSUER_ID"],
-      key_filepath: ENV["API_KEY_FILEPATH"]
+        key_id: "4F67HCB9N8",
+        issuer_id: "08ac18d7-d3c1-49a2-901b-6956daadbeb7",
+        key_filepath: "fastlane/AuthKey_4F67HCB9N8.p8"
     )
 
     automatic_code_signing(
