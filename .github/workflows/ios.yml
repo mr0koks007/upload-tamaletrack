@@ -13,22 +13,16 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: Setup Ruby
-        uses: ruby/setup-ruby@v1
-        with:
-          ruby-version: 3.1
-
-      - name: Install dependencies
-        run: |
-          gem install bundler
-          bundle install || bundle init
+      - name: Install Fastlane
+        run: sudo gem install fastlane -NV
 
       - name: Decode App Store Connect API Key
         run: |
           mkdir -p fastlane
           echo "${{ secrets.APP_STORE_CONNECT_KEY_BASE64 }}" | base64 -d > fastlane/AuthKey_4F67HCB9N8.p8
 
-      - name: Build and upload with Fastlane
+      - name: Run Fastlane beta lane
         env:
           FASTLANE_XCODEBUILD_SETTINGS_TIMEOUT: 120
         run: fastlane beta
+
