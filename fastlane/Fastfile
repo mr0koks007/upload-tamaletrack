@@ -1,12 +1,12 @@
 default_platform(:ios)
 
 platform :ios do
-  desc "Собрать и залить билд в TestFlight"
-  lane :release do
+  desc "Собрать и отправить билд в TestFlight"
+  lane :beta do
     api_key = app_store_connect_api_key(
       key_id: "4F67HCB9N8",
       issuer_id: "08ac18d7-d3c1-49a2-901b-6956daadbeb7",
-      key_filepath: "fastlane/AuthKey_4F67HCB9N8.p8"
+      key_filepath: "./fastlane/AuthKey_4F67HCB9N8.p8"
     )
 
     update_project_team(
@@ -22,20 +22,19 @@ platform :ios do
     build_app(
       scheme: "TamaleTrack",
       export_method: "app-store",
-      export_team_id: "NGP65SQNNL",
-      xcargs: "-allowProvisioningUpdates",
       export_options: {
-        signingStyle: "automatic",
         provisioningProfiles: {
           "com.TamaleTrack" => "match AppStore com.TamaleTrack"
-        }
-      }
+        },
+        signingStyle: "automatic",
+        signingCertificate: "Apple Distribution",
+        compileBitcode: true,
+        manageAppVersionAndBuildNumber: true,
+      },
+      allowProvisioningUpdates: true
     )
 
     upload_to_testflight(api_key: api_key)
   end
-
-  lane :beta do
-    release
-  end
 end
+
