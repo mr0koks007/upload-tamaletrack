@@ -3,10 +3,14 @@ default_platform(:ios)
 platform :ios do
   desc "Собрать и залить билд в TestFlight"
   lane :release do
-    build_app(
-      scheme: "TamaleTrack",
-      export_method: "app-store"
-    )
+   build_app(
+  scheme: "TamaleTrack",
+  export_method: "app-store",
+  export_options: {
+    signingStyle: "automatic"
+  }
+)
+
 
     upload_to_testflight(
   api_key: app_store_connect_api_key(
