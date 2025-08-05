@@ -10,17 +10,25 @@ jobs:
     runs-on: macos-latest
 
     steps:
-      - name: 🧾 Checkout repository
+      - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: 💎 Install Fastlane
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 3.1 # или та версия, которая нужна fastlane
+
+      - name: Install fastlane
         run: gem install fastlane
 
-      - name: 🔑 Restore App Store Connect API Key
+      - name: Decode App Store Connect API Key
         run: |
           mkdir -p fastlane
           echo "${{ secrets.APP_STORE_CONNECT_KEY_BASE64 }}" | base64 -d > fastlane/AuthKey_4F67HCB9N8.p8
 
-      - name: 🚀 Run Fastlane
+      - name: Run Fastlane
         run: fastlane beta
+        env:
+          FASTLANE_APPLE_APPLICATION_SPECIFIC_PASSWORD: ${{ secrets.APP_SPECIFIC_PASSWORD }}
+          FASTLANE_ITC_TEAM_ID: NGP65SQNNL
 
