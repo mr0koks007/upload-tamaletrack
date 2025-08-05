@@ -23,6 +23,7 @@ platform :ios do
       scheme: "TamaleTrack",
       export_method: "app-store",
       export_team_id: "NGP65SQNNL",
+      xcargs: "-allowProvisioningUpdates",
       export_options: {
         signingStyle: "automatic"
       }
@@ -35,3 +36,4 @@ platform :ios do
     release
   end
 end
+
