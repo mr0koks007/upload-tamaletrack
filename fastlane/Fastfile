@@ -9,11 +9,6 @@ platform :ios do
       key_filepath: "fastlane/AuthKey_4F67HCB9N8.p8"
     )
 
-    # Подключаем авторизацию для Xcode/Provisioning
-    authenticate(
-      api_key: api_key
-    )
-
     update_project_team(
       path: "TamaleTrack.xcodeproj",
       teamid: "NGP65SQNNL"
@@ -30,7 +25,10 @@ platform :ios do
       export_team_id: "NGP65SQNNL",
       xcargs: "-allowProvisioningUpdates",
       export_options: {
-        signingStyle: "automatic"
+        signingStyle: "automatic",
+        provisioningProfiles: {
+          "com.TamaleTrack" => "match AppStore com.TamaleTrack"
+        }
       }
     )
 
