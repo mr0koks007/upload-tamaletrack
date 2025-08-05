@@ -9,27 +9,29 @@ platform :ios do
       key_filepath: "./fastlane/AuthKey_4F67HCB9N8.p8"
     )
 
-    update_project_team(
-      path: "TamaleTrack.xcodeproj",
-      teamid: "NGP65SQNNL"
+    # Подключение авторизации
+    authenticate_with_app_store_connect_api_key(api_key: api_key)
+
+    # Загружаем сертификаты и provisioning profiles из match-репозитория
+    match(
+      type: "appstore",                        # или development для тестов
+      readonly: false,                         # первый запуск = false (чтобы создать)
+      app_identifier: "com.TamaleTrack",       # твой bundle id
+      git_url: ENV["MATCH_GIT_URL"],           # секрет из GitHub Actions
+      username: "richardgleitman@gmail.com"    # твой Apple ID
     )
 
-    update_code_signing_settings(
-      use_automatic_signing: true,
-      path: "TamaleTrack.xcodeproj"
-    )
-
+    # Архив и билд
     build_app(
       scheme: "TamaleTrack",
       export_method: "app-store",
       export_options: {
-        signingStyle: "automatic",
         compileBitcode: true,
         manageAppVersionAndBuildNumber: true
-      },
-      xcargs: "-allowProvisioningUpdates"
+      }
     )
 
+    # Загрузка в TestFlight
     upload_to_testflight(api_key: api_key)
   end
 end
