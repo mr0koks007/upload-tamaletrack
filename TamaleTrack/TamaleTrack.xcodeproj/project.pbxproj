@@ -1,0 +1,445 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3D0BB09B2E41F36F006B17D4 /* MainGateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0BB09A2E41F369006B17D4 /* MainGateView.swift */; };
+		3D0BB09D2E41F3B7006B17D4 /* WebViewWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0BB09C2E41F3B0006B17D4 /* WebViewWrapper.swift */; };
+		BEDDB0342DEDD89100135713 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDDB0302DEDD89100135713 /* ContentView.swift */; };
+		BEDDB0352DEDD89100135713 /* TamaleTrackApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDDB0322DEDD89100135713 /* TamaleTrackApp.swift */; };
+		BEDDB0362DEDD89100135713 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BEDDB02D2DEDD89100135713 /* Preview Assets.xcassets */; };
+		BEDDB0372DEDD89100135713 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BEDDB02F2DEDD89100135713 /* Assets.xcassets */; };
+		BEDDB0392DEDD9A900135713 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDDB0382DEDD9A900135713 /* Model.swift */; };
+		BEDDB03B2DEDDEB000135713 /* TamaleBatchLogManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDDB03A2DEDDEB000135713 /* TamaleBatchLogManager.swift */; };
+		BEDDB03D2DEDDF7E00135713 /* TamaleBatchLogListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDDB03C2DEDDF7E00135713 /* TamaleBatchLogListView.swift */; };
+		BEDDB03F2DEDDF8F00135713 /* AddEditTamaleBatchLogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDDB03E2DEDDF8F00135713 /* AddEditTamaleBatchLogView.swift */; };
+		BEDDB0412DEDE0E900135713 /* TamaleMainTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDDB0402DEDE0E900135713 /* TamaleMainTabBarView.swift */; };
+		BEDDB0432DEE00BA00135713 /* TamaleOrderManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDDB0422DEE00BA00135713 /* TamaleOrderManager.swift */; };
+		BEDDB0452DEE00FE00135713 /* TamaleOrderListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDDB0442DEE00FE00135713 /* TamaleOrderListView.swift */; };
+		BEDDB0472DEE019E00135713 /* AddEditTamaleOrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDDB0462DEE019E00135713 /* AddEditTamaleOrderView.swift */; };
+		BEDDB0492DEE01F900135713 /* IngredientStockManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDDB0482DEE01F900135713 /* IngredientStockManager.swift */; };
+		BEDDB04F2DEE355100135713 /* IngredientStockListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDDB04E2DEE355100135713 /* IngredientStockListView.swift */; };
+		BEDDB0512DEE357200135713 /* AddEditIngredientStockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDDB0502DEE357200135713 /* AddEditIngredientStockView.swift */; };
+		BEDDB0532DEE35D600135713 /* EquipmentCleaningLogManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDDB0522DEE35D600135713 /* EquipmentCleaningLogManager.swift */; };
+		BEDDB0552DEE360400135713 /* EquipmentCleaningLogListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDDB0542DEE360400135713 /* EquipmentCleaningLogListView.swift */; };
+		BEDDB0572DEE361900135713 /* AddEditEquipmentCleaningLogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDDB0562DEE361900135713 /* AddEditEquipmentCleaningLogView.swift */; };
+		BEDDB0592DEE369900135713 /* OverviewTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDDB0582DEE369900135713 /* OverviewTabView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3D0BB09A2E41F369006B17D4 /* MainGateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainGateView.swift; sourceTree = "<group>"; };
+		3D0BB09C2E41F3B0006B17D4 /* WebViewWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewWrapper.swift; sourceTree = "<group>"; };
+		BEDDB01B2DEDD87000135713 /* TamaleTrack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TamaleTrack.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEDDB02D2DEDD89100135713 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BEDDB02F2DEDD89100135713 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BEDDB0302DEDD89100135713 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		BEDDB0312DEDD89100135713 /* TamaleTrack.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TamaleTrack.entitlements; sourceTree = "<group>"; };
+		BEDDB0322DEDD89100135713 /* TamaleTrackApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TamaleTrackApp.swift; sourceTree = "<group>"; };
+		BEDDB0382DEDD9A900135713 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		BEDDB03A2DEDDEB000135713 /* TamaleBatchLogManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TamaleBatchLogManager.swift; sourceTree = "<group>"; };
+		BEDDB03C2DEDDF7E00135713 /* TamaleBatchLogListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TamaleBatchLogListView.swift; sourceTree = "<group>"; };
+		BEDDB03E2DEDDF8F00135713 /* AddEditTamaleBatchLogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEditTamaleBatchLogView.swift; sourceTree = "<group>"; };
+		BEDDB0402DEDE0E900135713 /* TamaleMainTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TamaleMainTabBarView.swift; sourceTree = "<group>"; };
+		BEDDB0422DEE00BA00135713 /* TamaleOrderManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TamaleOrderManager.swift; sourceTree = "<group>"; };
+		BEDDB0442DEE00FE00135713 /* TamaleOrderListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TamaleOrderListView.swift; sourceTree = "<group>"; };
+		BEDDB0462DEE019E00135713 /* AddEditTamaleOrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEditTamaleOrderView.swift; sourceTree = "<group>"; };
+		BEDDB0482DEE01F900135713 /* IngredientStockManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientStockManager.swift; sourceTree = "<group>"; };
+		BEDDB04E2DEE355100135713 /* IngredientStockListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientStockListView.swift; sourceTree = "<group>"; };
+		BEDDB0502DEE357200135713 /* AddEditIngredientStockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEditIngredientStockView.swift; sourceTree = "<group>"; };
+		BEDDB0522DEE35D600135713 /* EquipmentCleaningLogManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquipmentCleaningLogManager.swift; sourceTree = "<group>"; };
+		BEDDB0542DEE360400135713 /* EquipmentCleaningLogListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquipmentCleaningLogListView.swift; sourceTree = "<group>"; };
+		BEDDB0562DEE361900135713 /* AddEditEquipmentCleaningLogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEditEquipmentCleaningLogView.swift; sourceTree = "<group>"; };
+		BEDDB0582DEE369900135713 /* OverviewTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewTabView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BEDDB0182DEDD87000135713 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BEDDB0122DEDD87000135713 = {
+			isa = PBXGroup;
+			children = (
+				BEDDB0332DEDD89100135713 /* TamaleTrack */,
+				BEDDB01C2DEDD87000135713 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BEDDB01C2DEDD87000135713 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BEDDB01B2DEDD87000135713 /* TamaleTrack.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BEDDB02E2DEDD89100135713 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				BEDDB02D2DEDD89100135713 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BEDDB0332DEDD89100135713 /* TamaleTrack */ = {
+			isa = PBXGroup;
+			children = (
+				3D0BB09C2E41F3B0006B17D4 /* WebViewWrapper.swift */,
+				3D0BB09A2E41F369006B17D4 /* MainGateView.swift */,
+				BEDDB0322DEDD89100135713 /* TamaleTrackApp.swift */,
+				BEDDB0402DEDE0E900135713 /* TamaleMainTabBarView.swift */,
+				BEDDB0302DEDD89100135713 /* ContentView.swift */,
+				BEDDB0382DEDD9A900135713 /* Model.swift */,
+				BEDDB03A2DEDDEB000135713 /* TamaleBatchLogManager.swift */,
+				BEDDB03C2DEDDF7E00135713 /* TamaleBatchLogListView.swift */,
+				BEDDB03E2DEDDF8F00135713 /* AddEditTamaleBatchLogView.swift */,
+				BEDDB0422DEE00BA00135713 /* TamaleOrderManager.swift */,
+				BEDDB0442DEE00FE00135713 /* TamaleOrderListView.swift */,
+				BEDDB0462DEE019E00135713 /* AddEditTamaleOrderView.swift */,
+				BEDDB0482DEE01F900135713 /* IngredientStockManager.swift */,
+				BEDDB04E2DEE355100135713 /* IngredientStockListView.swift */,
+				BEDDB0502DEE357200135713 /* AddEditIngredientStockView.swift */,
+				BEDDB0522DEE35D600135713 /* EquipmentCleaningLogManager.swift */,
+				BEDDB0542DEE360400135713 /* EquipmentCleaningLogListView.swift */,
+				BEDDB0562DEE361900135713 /* AddEditEquipmentCleaningLogView.swift */,
+				BEDDB0582DEE369900135713 /* OverviewTabView.swift */,
+				BEDDB02E2DEDD89100135713 /* Preview Content */,
+				BEDDB02F2DEDD89100135713 /* Assets.xcassets */,
+				BEDDB0312DEDD89100135713 /* TamaleTrack.entitlements */,
+			);
+			path = TamaleTrack;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BEDDB01A2DEDD87000135713 /* TamaleTrack */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BEDDB02A2DEDD87100135713 /* Build configuration list for PBXNativeTarget "TamaleTrack" */;
+			buildPhases = (
+				BEDDB0172DEDD87000135713 /* Sources */,
+				BEDDB0182DEDD87000135713 /* Frameworks */,
+				BEDDB0192DEDD87000135713 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TamaleTrack;
+			packageProductDependencies = (
+			);
+			productName = TamaleTrack;
+			productReference = BEDDB01B2DEDD87000135713 /* TamaleTrack.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BEDDB0132DEDD87000135713 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					BEDDB01A2DEDD87000135713 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+				};
+			};
+			buildConfigurationList = BEDDB0162DEDD87000135713 /* Build configuration list for PBXProject "TamaleTrack" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BEDDB0122DEDD87000135713;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = BEDDB01C2DEDD87000135713 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BEDDB01A2DEDD87000135713 /* TamaleTrack */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BEDDB0192DEDD87000135713 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEDDB0362DEDD89100135713 /* Preview Assets.xcassets in Resources */,
+				BEDDB0372DEDD89100135713 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BEDDB0172DEDD87000135713 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEDDB03F2DEDDF8F00135713 /* AddEditTamaleBatchLogView.swift in Sources */,
+				BEDDB0452DEE00FE00135713 /* TamaleOrderListView.swift in Sources */,
+				BEDDB0392DEDD9A900135713 /* Model.swift in Sources */,
+				3D0BB09D2E41F3B7006B17D4 /* WebViewWrapper.swift in Sources */,
+				BEDDB03B2DEDDEB000135713 /* TamaleBatchLogManager.swift in Sources */,
+				BEDDB03D2DEDDF7E00135713 /* TamaleBatchLogListView.swift in Sources */,
+				BEDDB0572DEE361900135713 /* AddEditEquipmentCleaningLogView.swift in Sources */,
+				BEDDB0342DEDD89100135713 /* ContentView.swift in Sources */,
+				BEDDB0532DEE35D600135713 /* EquipmentCleaningLogManager.swift in Sources */,
+				BEDDB0552DEE360400135713 /* EquipmentCleaningLogListView.swift in Sources */,
+				BEDDB0412DEDE0E900135713 /* TamaleMainTabBarView.swift in Sources */,
+				BEDDB0472DEE019E00135713 /* AddEditTamaleOrderView.swift in Sources */,
+				BEDDB04F2DEE355100135713 /* IngredientStockListView.swift in Sources */,
+				BEDDB0432DEE00BA00135713 /* TamaleOrderManager.swift in Sources */,
+				BEDDB0492DEE01F900135713 /* IngredientStockManager.swift in Sources */,
+				BEDDB0592DEE369900135713 /* OverviewTabView.swift in Sources */,
+				BEDDB0352DEDD89100135713 /* TamaleTrackApp.swift in Sources */,
+				3D0BB09B2E41F36F006B17D4 /* MainGateView.swift in Sources */,
+				BEDDB0512DEE357200135713 /* AddEditIngredientStockView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		BEDDB0282DEDD87100135713 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BEDDB0292DEDD87100135713 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		BEDDB02B2DEDD87100135713 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = TamaleTrack/TamaleTrack.entitlements;
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"TamaleTrack/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TamaleTrack/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = TamaleTrack;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MARKETING_VERSION = 1.0;
+				NEW_SETTING = "";
+				NSAppTransportSecurity = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.TamaleTrack;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				XROS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		BEDDB02C2DEDD87100135713 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = TamaleTrack/TamaleTrack.entitlements;
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"TamaleTrack/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TamaleTrack/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = TamaleTrack;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MARKETING_VERSION = 1.0;
+				NEW_SETTING = "";
+				NSAppTransportSecurity = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.TamaleTrack;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				XROS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BEDDB0162DEDD87000135713 /* Build configuration list for PBXProject "TamaleTrack" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEDDB0282DEDD87100135713 /* Debug */,
+				BEDDB0292DEDD87100135713 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BEDDB02A2DEDD87100135713 /* Build configuration list for PBXNativeTarget "TamaleTrack" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEDDB02B2DEDD87100135713 /* Debug */,
+				BEDDB02C2DEDD87100135713 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BEDDB0132DEDD87000135713 /* Project object */;
+}
