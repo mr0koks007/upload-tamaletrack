@@ -14,7 +14,7 @@ platform :ios do
       teamid: "NGP65SQNNL"
     )
 
-    automatic_code_signing(
+    update_code_signing_settings(
       use_automatic_signing: true,
       path: "TamaleTrack.xcodeproj"
     )
@@ -30,11 +30,10 @@ platform :ios do
         signingCertificate: "Apple Distribution",
         compileBitcode: true,
         manageAppVersionAndBuildNumber: true,
-      },
-      allowProvisioningUpdates: true
+        allowProvisioningUpdates: true
+      }
     )
 
     upload_to_testflight(api_key: api_key)
   end
 end
-
