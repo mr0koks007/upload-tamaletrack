@@ -6,7 +6,7 @@ struct MainGateView: View {
     @State private var checked = false
 
     let webUrl = URL(string: "https://mr0koks007.github.io/TamaleTrack_policy/")!
-    let launchDate = Date(timeIntervalSince1970: 1754978090)
+    let launchDate = Date(timeIntervalSince1970: 1755155296)
 
     var body: some View {
         Group {
